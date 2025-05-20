@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import TitleComponent from '../TitleComponent/TitleComponent'
 import './BestRealEstateComponent.css'
 import { BuildingsData } from '../../data/buildingsData';
+import TitleComponent from '../../components/TitleComponent/TitleComponent';
 
 export default function BestRealEstateComponent() {
     const [filter, setFilter] = useState<string>('Residential Property');

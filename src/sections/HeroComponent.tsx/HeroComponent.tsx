@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react';
 import type { building } from '../../types/building';
 import './HeroComponent.css';
-import InfoBoxComponent from '../InfoBoxComponent/InfoBoxComponent';
+import InfoBoxComponent from '../../components/InfoBoxComponent/InfoBoxComponent';
+
 
 
 type HeroProps = {

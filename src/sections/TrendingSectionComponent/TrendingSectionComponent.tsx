@@ -1,6 +1,7 @@
+import CardComponent from '../../components/CardComponent/CardComponent';
+import TitleComponent from '../../components/TitleComponent/TitleComponent';
 import type { building } from '../../types/building'
-import CardComponent from '../CardComponent/CardComponent';
-import TitleComponent from '../TitleComponent/TitleComponent'
+
 import './TrendingSectionComponent.css'
 
 type TrendingSectionProps = {

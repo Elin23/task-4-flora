@@ -1,6 +1,7 @@
+import HowItWorksCard from "../../components/HowItWorksCard/HowItWorksCard";
+import TitleComponent from "../../components/TitleComponent/TitleComponent";
 import { howItWorksData } from "../../data/howItWorksData";
-import HowItWorksCard from "../HowItWorksCard/HowItWorksCard";
-import TitleComponent from "../TitleComponent/TitleComponent";
+
 import './HowItWorksComponent.css'
 export default function HowItWorksComponent() {
     return (

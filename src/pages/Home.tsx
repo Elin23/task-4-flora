@@ -1,15 +1,15 @@
 import { useEffect, useState } from "react";
-import BannerComponent from "../components/BannerComponent/BannerComponent";
-import BestRealEstateComponent from "../components/BestRealEstateComponent/BestRealEstateComponent";
-import FooterComponent from "../components/FooterComponent/FooterComponent";
-import HeroComponent from "../components/HeroComponent.tsx/HeroComponent";
-import HowItWorksComponent from "../components/HowItWorksComponent/HowItWorksComponent";
-import NavbarComponent from "../components/NavbarComponent/NavbarComponent";
-import TrendingSectionComponent from "../components/TrendingSectionComponent/TrendingSectionComponent";
 import { BuildingsData, heroBuildingsData } from "../data/buildingsData";
 import { pagesLinks } from "../data/linksData";
 import { socialLinks } from "../data/socialLinksData";
 import Loader from "../components/Loader/Loader";
+import NavbarComponent from "../components/NavbarComponent/NavbarComponent";
+import HeroComponent from "../sections/HeroComponent.tsx/HeroComponent";
+import HowItWorksComponent from "../sections/HowItWorksComponent/HowItWorksComponent";
+import BannerComponent from "../sections/BannerComponent/BannerComponent";
+import TrendingSectionComponent from "../sections/TrendingSectionComponent/TrendingSectionComponent";
+import BestRealEstateComponent from "../sections/BestRealEstateComponent/BestRealEstateComponent";
+import FooterComponent from "../sections/FooterComponent/FooterComponent";
 
 export default function Home() {
   const [loading, setLoading] = useState(true);
