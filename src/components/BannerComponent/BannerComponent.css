@@ -1,0 +1,36 @@
+.banner-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 58px;
+    background-image: url('/assets/imgs/house.png');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    height: 380px;
+}
+.banner-container::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--black50-color);
+    z-index: 2;
+}
+.banner-container h3,
+.banner-container p{
+    color: var(--white-color);
+    z-index: 3;
+    text-align: center;
+}
+@media (max-width: 992px) {
+    .banner-container{
+        padding: 0 11px;
+    }
+}
+@media (max-width: 540px) {
+    .banner-container{
+        gap: 15px;
+    }
+}

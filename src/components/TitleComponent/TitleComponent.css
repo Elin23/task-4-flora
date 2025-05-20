@@ -1,0 +1,8 @@
+.title-container{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.title-container p{
+    color: var(--black50-color);
+}

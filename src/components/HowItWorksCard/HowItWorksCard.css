@@ -1,0 +1,49 @@
+.HIT-card-container{
+    padding: 30px 40px;
+    border-radius: 15px;
+    display: flex;
+    flex: 0 0 calc(33.333% - 3.14%);
+    max-width: calc(33.333% - 3.14%);
+    flex-direction: column;
+    height: 255px;
+    transition: var(--main-transition);
+    cursor: pointer;
+}
+.HIT-card-container:nth-child(2),
+.HIT-card-container:hover{
+    background-color: var(--royal-blue-color);
+    color: var(--white-color);
+}
+.HIT-card-container img{
+    width: 72px;
+    height: 70px;
+}
+.HIT-card-container:hover img{
+    filter: brightness(0) invert(1);
+    
+}
+.HIT-card-content{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+@media (max-width: 1920px) {
+    .HIT-card-container img{
+    width: 42px;
+    height: 40px;
+}
+}
+@media (max-width: 992px) {
+    .HIT-card-container {
+        flex: 0 0 calc(50% - 3.14%);
+        max-width: calc(50% - 3.14%);
+    }
+}
+
+@media (max-width: 540px) {
+    .HIT-card-container {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
