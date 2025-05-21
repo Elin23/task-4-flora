@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import type { PagesLinks, SocialLinks } from "../../types/links";
 import './FooterComponent.css'
+import ButtonComponent from "../../components/ButtonComponent/ButtonComponent";
 type FooterProps = {
     logo: string;
     description: string;
@@ -40,7 +41,7 @@ export default function FooterComponent({logo, description, location, links, soc
             {
                 social.map((social, index)=> (
                     <li>
-                        <a key={index} href={social.url}><img src={social.icon} alt="social-media-icon" /></a>
+                        <ButtonComponent href={social.url} icon={social.icon} alt="social-media-icon" key={index}/>
                     </li>
                 ))
             }

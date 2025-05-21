@@ -14,7 +14,7 @@ export default function TrendingSectionComponent({buildings} : TrendingSectionPr
       <div className="trending-cards">
         {
             buildings.slice(0, -3).map((building, index) => (
-                <CardComponent img={building.img} title={building.name} location={building.location} price={building.price}/>
+                <CardComponent img={building.img} title={building.name} location={building.location} price={building.price} key={index}/>
             ))
         }
       </div>

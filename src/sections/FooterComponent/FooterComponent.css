@@ -2,8 +2,9 @@
     display: flex;
     flex-wrap: wrap;
     gap: 7%;
-    row-gap: 60px;
+    row-gap: 35px;
     padding-top: 35px;
+    justify-content: space-between;
 }
 .site-info{
     width: 25%;
@@ -47,16 +48,6 @@
     display: flex;
     gap: 16px;
 }
-.social-media-links li a{
-    width: 48px;
-    height: 48px;
-    background-color: var(--royal-blue-color);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: var(--main-transition);
-}
 .copyright-info{
     width: 100%;
     display: flex;
@@ -75,9 +66,14 @@
 .sub-links a{
     color: var(--black-color);
 }
-.social-media-links a:hover{
-    transform: translateY(-5px);
+
+@media (max-width: 1920px) {
+    .footer-container{
+        justify-content: start;
+        column-gap: 60px;
+    }
 }
+
 @media (max-width: 992px) {
     .site-info{
         width: 100%;

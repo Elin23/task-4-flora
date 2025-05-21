@@ -1,0 +1,13 @@
+.customized-btn{
+    width: 48px;
+    height: 48px;
+    background-color: var(--royal-blue-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--main-transition);
+}
+.customized-btn:hover{
+    transform: translateY(-5px);
+}

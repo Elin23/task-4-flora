@@ -4,10 +4,11 @@ type CardProps = {
     price: number | string;
     title: string;
     location: string;
+    key: number;
 }
-export default function CardComponent({img, price, title, location} : CardProps) {
+export default function CardComponent({img, price, title, location, key} : CardProps) {
   return (
-    <div className='card-container' data-aos="zoom-in">
+    <div className='card-container' data-aos="zoom-in" key={key}>
       <img src={img} alt="building-img" />
       <span className='font-18 card-price'>${price}</span>
       <span className='font-18 card-title'>{title}</span>

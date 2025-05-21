@@ -3,7 +3,8 @@
     border-radius: 15px;
     display: flex;
     flex: 0 0 calc(33.333% - 3.14%);
-    max-width: calc(33.333% - 3.14%);
+    /* max-width: calc(33.333% - 3.14%); */
+    max-width: 600px;
     flex-direction: column;
     height: 255px;
     transition: var(--main-transition);

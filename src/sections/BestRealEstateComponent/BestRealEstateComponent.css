@@ -4,7 +4,6 @@
     display: flex;
     gap: 50px;
     overflow: scroll;
-
 }
 .tabs::-webkit-scrollbar {
     display: none;
@@ -24,16 +23,18 @@
 
 .property-cards {
     display: flex;
-    gap: 3.9%;
+    gap: 1.7%;
     flex-wrap: wrap;
     row-gap: 20px;
+    /* justify-content: space-between; */
 }
 
 .property-cards .card-img-container {
     position: relative;
     display: flex;
-    flex: 0 0 calc(33.333% - 3.9%);
-    max-width: calc(33.333% - 3.9%);
+    flex: 0 0 calc(33.333% - 1.7%);
+    /* max-width: calc(33.333% - 3.9%); */
+    max-width: 600px;
     cursor: pointer;
 }
 .card-img-container img{

@@ -57,7 +57,10 @@ const routers = createBrowserRouter([
   // }
 ], {
   basename: "/task-4-flora"
-})
+}) 
+{/* note: All routes currently commented,
+as the website only has a single page for now.
+These routes are prepared for future. */}
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <RouterProvider router={routers}/>
